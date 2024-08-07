@@ -1,0 +1,10 @@
+<header [class.shadow]="scrollY > 32">
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="logo" />
+  </div>
+  <div class="menu" [class.show]="menuShow" (click)="menutoggle()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+</header>

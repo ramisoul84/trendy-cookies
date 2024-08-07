@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Steppe-Book";
+  src: url("assets/fonts/Steppe-Book.ttf");
+}
+
+@font-face {
+  font-family: "Steppe-ExtraBold";
+  src: url("assets/fonts/Steppe-ExtraBold.ttf");
+}
+
+$ColorBg: #5243f4;
+$ColorWhite: #ffffff;
+$FontMain: "Steppe-Book";
+$FontBold: "Steppe-ExtraBold";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $ColorBg;
+  color: $ColorWhite;
+  font-family: $FontMain;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  min-height: 10rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.btn {
+  background-color: $ColorWhite;
+  color: $ColorBg;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+  height: 2.4rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+body {
+  margin: 0 2rem;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    display: none;
+    margin: 0 4rem;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    display: none;
+    margin: 0 6rem;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    display: none;
+    margin: 0 8rem;
+  }
+}

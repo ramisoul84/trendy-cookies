@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+#home {
+  margin-top: 6rem;
+  gap: 2rem 0;
+  position: relative;
+  .home-img {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    right: -2rem;
+  }
+  .home-title {
+    font-size: 2rem;
+  }
+  .home-text {
+    width: 70%;
+  }
+  .home-btn {
+  }
+}
